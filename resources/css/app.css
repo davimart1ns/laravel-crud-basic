@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer components {
+    .main-container {
+        @apply flex flex-col min-h-screen bg-gray-100;
+    }
+
+    .header {
+        @apply bg-red-600 text-white p-4 w-full shadow-md;
+    }
+
+    .content-header {
+        @apply max-w-6xl mx-auto flex items-center;
+    }
+
+    .title-logo {
+        @apply text-xl font-bold;
+    }
+
+    .list-nav-link {
+        @apply flex space-x-6 ml-6;
+    }
+
+    .nav-link {
+        @apply hover:text-gray-300 transition-colors;
+    }
+
+    .content {
+        @apply flex-1 px-22 py-6 max-w-6xl mx-auto w-full;
+    }
+
+    .content-title {
+        @apply flex justify-between items-center mb-8;
+    }
+
+    .page-title {
+        @apply text-3xl font-bold text-gray-800;
+    }
+
+    .form-container {
+        @apply mt-6 bg-white shadow-md rounded-lg
+        p-6;
+    }
+
+    .form-label {
+        @apply block text-sm font-semibold;
+    }
+
+    .form-input {
+        @apply border p-2 w-full mt-1 rounded-md border-red-100 shadow-sm focus:border-red-300 focus:ring-red-200 focus:outline-none;
+    }
+
+    .table-container {
+        @apply overflow-x-auto bg-white shadow-md rounded-lg;
+    }
+
+    .table {
+        @apply min-w-full border-collapse w-full;
+    }
+
+    .table-header {
+        @apply bg-red-400 text-white uppercase text-sm leading-normal;
+    }
+
+    .table-header th {
+        @apply py-3 px-6 text-left;
+    }
+
+    .table-header .center {
+        @apply text-center;
+    }
+
+    .table-body {
+        @apply text-gray-700 text-sm font-light;
+    }
+
+    .table-row {
+        @apply border-b border-gray-200 hover:bg-blue-50 transition;
+    }
+
+    .table-ceel {
+        @apply  py-3 px-8;
+    }
+
+    .table-actions {
+        @apply py-3 px-6  text-center flex space-x-1 justify-center;
+    }
+
+    .pagination {
+        @apply mt-2 p-3;
+    }
+
+    .btn-primary {
+        @apply bg-blue-500 text-white p-2 rounded-md ml-auto transition-colors;
+    }
+
+    .btn-primary:hover {
+        @apply bg-blue-600;
+    }
+
+    .btn-success {
+        @apply p-2 bg-green-500 text-white rounded-md cursor-pointer transition-colors;
+    }
+
+    .btn-success:hover {
+        @apply bg-green-600;
+    }
+
+    .btn-warning {
+        @apply p-2 bg-yellow-500 text-white rounded-md cursor-pointer 
+        hover:bg-yellow-600 transition-colors;
+    }
+
+    .btn-danger {
+        @apply p-2 bg-red-500 text-white rounded-md cursor-pointer 
+        hover:bg-red-600 transition-colors;
+    }
+    
+    .btn-info {
+        @apply bg-orange-400 text-white p-2 rounded-md ml-auto hover:bg-orange-500 transition-colors;
+    }
+
+    .btn-info-pdf {
+        @apply bg-blue-400 text-white p-2 rounded-md ml-auto hover:bg-blue-500 transition-colors;
+    }
+
+    .alert-success {
+        @apply p-4 mb-4 text-sm text-green-200 rounded-lg bg-green-200  dark:text-green-500
+    }
+    .alert-error {
+        @apply p-4 mb-4 text-sm text-red-200 rounded-lg bg-red-200 dark:text-red-500
+    }
+    
+
+}
