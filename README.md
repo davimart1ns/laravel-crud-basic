@@ -2,7 +2,7 @@
 
 Projeto básico de CRUD (Create, Read, Update, Delete) desenvolvido com **Laravel 12**, incluindo operações completas de criação, leitura, edição e exclusão de usuários e/ou dados.
 
-Este projeto é ideal para quem está começando com Laravel e quer entender como funciona a estrutura de um CRUD completo. :contentReference[oaicite:0]{index=0}
+Este projeto é ideal para quem está começando com Laravel e quer entender como funciona a estrutura de um CRUD completo.
 
 ---
 
